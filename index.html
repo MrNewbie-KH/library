@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="icon" type="image/x-icon" href="book-black-opened-pages.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Library</h1>
+      <img src="library-logo (2).jpg" alt="library logo" />
+    </header>
+    <main>
+      <div class="form-container hidden">
+        <form class="book-form">
+          <input
+            type="text"
+            id="book-name"
+            name="book-name"
+            required
+            placeholder="Book name"
+          />
+          <input
+            type="text"
+            id="book-author"
+            name="book-author"
+            required
+            placeholder="Author name"
+          />
+          <input
+            type="number"
+            id="book-pages"
+            name="book-pages"
+            required
+            min="1"
+            max="10000"
+            width="100%"
+            placeholder="number of pages "
+          />
+          <div class="check">
+            <label for="read-checkbox">Have you read it?</label>
+            <input type="checkbox" id="read-checkbox" name="read-checkbox" />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <button class="add-book btn">+</button>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
